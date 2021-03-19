@@ -8,7 +8,7 @@ def hello(name, color):
         click.echo("Thor, you are always red.")
         click.echo(click.style(string.format("Hello {name}!"), fg="red"))
     else:
-        click.echo(f"Your color is {color}!")
+        click.echo(string.format ("Your color is {color}!"))
         click.echo(click.style(string.format ("Hello {name}!"), fg=color))
 
 if __name__ == "__main__":
